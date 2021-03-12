@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>meetup_7_nov_2019</title>
+<meta charset="utf-8">
+
+<style>
+
+body {
+ background-color: #ddd;
+ }
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+
+.area {							
+  fill: url(#area-gradient);					
+  stroke-width: 0px;			
+}
+p {text-align: center }
+
+</style>
+
+<body>
+
+<div> <p> Alain Ottenheimer - <a href="http://datasens.fr" target="_blank"> datasens.fr </a>  meetup TDV 7 nov 2019 - licence <a href="https://fr.wikipedia.org/wiki/Licence_MIT" target="_blank"> MIT </a> - nov 2019</p></div>
+
+<script type="module">
+
+// Load the Observable runtime and inspector.
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+
+// Your notebook, compiled as an ES module.
+import notebook from "https://api.observablehq.com/d/07fb2b74cce4ef01.js?v=3";
+// Load the notebook, observing its cells with a default Inspector
+// that simply renders the value of each cell into the provided DOM node.
+new Runtime().module(notebook, Inspector.into(document.body));
+
+
+
+</script>
+</body>
